@@ -4,7 +4,7 @@ const host = 'localhost';
 const fs = require('fs');   //file system
 
 //b2: khai báo port
-const port = 3000;   // default port của NodeJS
+const port = process.env.PORT || 3001;   // default port của NodeJS
 
 //b3: khai báo http
 const http = require('http');
